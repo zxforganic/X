@@ -3,14 +3,32 @@ html, body{
 	height: 100%;
 	margin: 0;
 	padding: 0;
-	background-image: url(../images/bg2.png);
+}
+div{
+	padding: 0;
 	background-repeat: no-repeat;
 	background-size: 100% 100%;
 }
-.two{
-	perspective: 300px;
+#wrap{
+	width: 100%;
+	height: 100%;
 }
-
+.two{
+	width: 100%;
+	height: 100%;
+	perspective: 300px;
+	background-image: url(../images/bg2.png);
+}
+.three{
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/bg3.png);
+}
+.four{
+	width: 100%;
+	height: 100%;
+	background-image: url(../images/bg4.png);
+}
 img.sjx{
 	width: 92%;
 	height: 1500px;
