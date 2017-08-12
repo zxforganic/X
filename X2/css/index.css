@@ -1,0 +1,42 @@
+html, body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+	background-image: url(../images/bg.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+	color: white;
+	font-size: 20px;
+}
+img.clock{
+	position: absolute;
+	top: 30%;
+	left: 43.7%;
+}
+img.long{
+	position: absolute;
+	top: 33.5%;
+	left: 50%;
+	animation: long 5s;
+	transform-origin: 0 0;
+}
+@keyframes long{
+	100% {transform: rotate(720deg)}
+}
+img.short{
+	position: absolute;
+	top: 33.5%;
+	left: 50%;
+	animation: short 5s;
+	transform-origin: 0 0;
+}
+@keyframes short{
+	100% {transform: rotate(60deg);}
+}
+span{
+	position: absolute;
+	top: 40%;
+	left: 47.5%;
+}
