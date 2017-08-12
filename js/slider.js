@@ -9,6 +9,7 @@ document.addEventListener("touchstart", function(e){
 }, false);
 
 document.addEventListener("touchmove", function(e){
+	// e.preventDefault();	
 	var touch = e.targetTouches[0];
 	endPos = {x: touch.pageX, y: touch.pageY};
 	var isScrolling = startPos.y - endPos.y;
