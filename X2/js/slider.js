@@ -46,6 +46,46 @@ $(function(){
     		if (index == 16) {
     			show(".page" + 16);
     		}
+            if (index == 17) {
+                $(".page17 img.edge").css({"display" : "block"});
+                $(".page17 img.edge").css({"animation" : "edge 2s"});
+
+                setTimeout(function(){
+                    $(".page17 img.explode1").css({"display" : "none"});
+                    $(".page17 img.edge").css({"display" : "none"});
+
+                    $(".page17 img.Lpart").css({"animation" : "Lpart 2s"});  
+                    $(".page17 img.Rpart").css({"animation" : "Rpart 2s"});
+                    $(".page17 img.Bpart").css({"animation" : "Bpart 2s"});    
+                }, 2000);
+                setTimeout(function(){
+                    $(".page17 img.Lpart").css({"display" : "none"});
+                    $(".page17 img.Rpart").css({"display" : "none"}); 
+                    $(".page17 img.Bpart").css({"display" : "none"});  
+                      
+                }, 4000);
+                setTimeout(function(){
+                    $(".page17 img.p19bcg").css({"display" : "block"}); 
+                }, 3000);
+                setTimeout(function(){
+                    $(".page17 img.uicon").css({"display" : "block"});
+                    $(".page17 img.logo").css({"animation" : "logo 1s"});
+                    $(".page17 img.user01").css({"animation" : "user01 1s"});
+                    $(".page17 img.user04").css({"animation" : "user04 1s"});
+                    $(".page17 img.user13").css({"animation" : "user13 1s"});
+                    $(".page17 img.user15").css({"animation" : "user15 1s"});
+                    $(".page17 img.user18").css({"animation" : "user18 1s"});
+                    $(".page17 img.user28").css({"animation" : "user28 1s"});
+                    $(".page17 img.user32").css({"animation" : "user32 1s"});
+                    $(".page17 img.user33").css({"animation" : "user33 1s"});
+                }, 4000);
+                setTimeout(function(){
+                    $(".page17 img.bcg").css({"display" : "block"});
+                    $(".page17 img.text").css({"display" : "block"});
+                    $(".page17 img.button").css({"display" : "block"});
+                }, 6000);
+                
+            }
     	},
     	onLeave: function(index, direction){
     		if (index == 2) {
@@ -107,4 +147,10 @@ function hide(element){
 		$(element).find("img").css({"display" : "none"}),
 		$(element).find("img").removeClass("show")
 	}, 500);
+}
+function last(){
+    $(".page17 img.text").css({"display" : "none"});
+    $(".page17 img.button").css({"display" : "none"});
+
+    $(".page17 img.last").css({"display" : "block"});
 }
